@@ -1,0 +1,170 @@
+/* Reset some default styles */
+body,
+ul {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: red;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+/* comment section */
+.comment-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: red;
+    color: white;
+}
+
+.comments {
+    margin-top: 10px;
+}
+
+.comment {
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* title section*/
+
+.post {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.post-title {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    color: #888;
+}
+
+.post-info p {
+    margin: 0;
+}
+
+.post-content {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
+
+/* Basic styling for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.bottom-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+}

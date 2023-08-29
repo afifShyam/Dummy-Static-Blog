@@ -1,0 +1,60 @@
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Blog</title>
+    <link rel="icon" href="images/pakatan harapan.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/dashStyle.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-header"><img src="images/logo.png" alt="Home" width="110" height="60"></div>
+
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <article class="post">
+        <h1 class="post-title">Title of the Post</h1>
+        <div class="post-info">
+
+            <p><i class="fas fa-user-alt"></i> By adminzack</p>
+            <p><i class="fas fa-calendar-alt"></i> Post date: October 15, 2022</p>
+        </div>
+        <div class="post-content">
+            <!-- Your post content goes here -->
+            <p>This is the content of the blog post...</p>
+        </div>
+    </article>
+
+    <div class="comment-section">
+        <h2>Comments</h2>
+        <input type="text" id="usernameInput" placeholder="Your Name">
+        <textarea id="commentInput" placeholder="Add a comment"></textarea>
+        <button id="addComment" type="button">Add Comment</button>
+
+        <div class="comments" id="comments"></div>
+    </div>
+
+    <script src="js/comment.js"></script>
+    <br>
+    <footer>
+        <div class="bottom-bar">
+            <p>&copy; 2023 Blog Dummy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
